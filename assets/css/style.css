@@ -1,0 +1,105 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 4fr 1fr;
+  grid-template-areas:
+    "header"
+    "filtro"
+    "main"
+    "footer";
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5%;
+  background: #44b140;
+  color: white;
+  grid-area: header;
+  padding: 3%;
+  background: red;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #d7d8e4;
+  grid-area: filtro;
+  background: blue;
+  color: white;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-image: url(https://images.alphacoders.com/510/thumb-1920-510026.jpg);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  padding-top: 5%;
+  width: 100%;
+  border-style: groove;
+}
+
+.flex-button p {
+  margin-inline: 3%;
+  padding: 1%;
+  margin: 2%;
+  border: 1px solid #fcf4f4;
+  background: #f02c0a;
+  color: rgb(8, 34, 179);
+}
+
+.flex-button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-top: 1%;
+  background-color: #090c9b;
+  width: 5rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  color: azure;
+}
+
+footer {
+  color: white;
+  grid-area: footer;
+  text-align: center;
+  padding: 1%;
+  background: blue;
+}
+
+.box_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+
+.no-movil {
+  display: none;
+}
+
